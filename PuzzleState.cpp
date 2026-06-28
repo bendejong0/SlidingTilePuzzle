@@ -81,8 +81,8 @@ PuzzleState PuzzleState::moveBlankRight(){
 	return temp;
 }
 
-vector<int> PuzzleState::getTiles() const{
-	return this->tiles;
+const vector<int>& PuzzleState::getTiles() const {
+    return tiles;
 }
 
 void PuzzleState::read(istream& in) {

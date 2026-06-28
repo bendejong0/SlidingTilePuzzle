@@ -1,5 +1,6 @@
 #include "Heuristic.h"
 #include "PuzzleMove.h"
+#include <cmath>
 
 // Sets up the heuristic to compute the Manhattan distance.
 Heuristic::Heuristic(PuzzleState g) : goal(g) {

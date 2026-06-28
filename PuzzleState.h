@@ -48,7 +48,7 @@ class PuzzleState
 	 PuzzleState moveBlankRight();
 	 
 	 // We need getTiles() for hashing and printing.
-	 vector<int> getTiles() const;
+	 const vector<int>& getTiles() const;
 
 	 void read( istream & in );
 	 void print( ostream & out);
