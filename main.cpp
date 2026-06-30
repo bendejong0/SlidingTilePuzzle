@@ -63,13 +63,12 @@ bool findSolution(const PuzzleState& start, const PuzzleState& goal) {
 	while (!open.empty()) {
 		PuzzleMove current = open.top();
 		open.pop();
+		closed.insert(current);
 		if (current.getState() == goal) {
-			closed.insert(current);
 			printSolution(closed, current);
 			return true;
 		}
 		else {
-			closed.insert(current);
 			expandState(current, open, closed, h);
 		}
 	}
